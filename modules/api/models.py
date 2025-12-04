@@ -13,7 +13,7 @@ models_bp = Blueprint('models', __name__, url_prefix='/api/models')
 @jwt_required()
 def list_models():
     """List all available models (Public + User's own)"""
-    user_id = get_jwt_identity()
+    user_id = int(get_jwt_identity())
     
     # Get public models
     public_models = Model.query.filter_by(is_public=True).all()
@@ -43,7 +43,7 @@ def download_model(model_id):
     model = Model.query.get_or_404(model_id)
     
     # Check permissions (is public or owns it)
-    user_id = get_jwt_identity()
+    user_id = int(get_jwt_identity())
     if not model.is_public and model.uploader_id != user_id:
         return jsonify({'error': 'Unauthorized'}), 403
         
@@ -75,20 +75,23 @@ def generate_model():
     input_path = os.path.join(output_dir, f"temp_gen_input_{job_id}.png")
     file.save(input_path)
     
+    # Get user ID
+    user_id = int(get_jwt_identity())
+
     # Start background thread
     # Note: In a real prod app, use Celery/Redis. For this prototype, Thread is fine.
     thread = threading.Thread(target=run_generation_task, 
-                            args=(current_app._get_current_object(), job_id, input_path))
+                            args=(current_app._get_current_object(), job_id, input_path, user_id))
     thread.daemon = True
     thread.start()
     
     return jsonify({
         'job_id': job_id,
         'status': 'processing',
-        'message': 'Generation started'
+        'message': 'Generation started. Check your library in a few minutes.'
     })
 
-def run_generation_task(app, job_id, image_path):
+def run_generation_task(app, job_id, image_path, user_id):
     """Background task for ComfyUI generation"""
     with app.app_context():
         try:
@@ -131,15 +134,21 @@ def run_generation_task(app, job_id, image_path):
             if final_glb:
                 # Move to our models dir
                 filename = os.path.basename(final_glb)
-                dest_path = os.path.join(app.config['OUTPUT_DIR'], filename)
+                dest_path = os.path.join(app.config['GENERATED_DIR'], filename)
                 import shutil
                 shutil.move(final_glb, dest_path)
                 
                 # Create DB Entry
-                # We need a user context, but this is a background thread.
-                # For now, we'll leave it as an "Orphan" model or assign to a system user?
-                # Better: The endpoint should pass the user_id to this function.
-                # For this prototype, we just save the file.
+                new_model = Model(
+                    name=f"Generated Model {job_id[:8]}",
+                    description="Generated from 2D image",
+                    file_path=dest_path,
+                    source='generated',
+                    is_public=False,
+                    uploader_id=user_id
+                )
+                db.session.add(new_model)
+                db.session.commit()
                 
                 print(f"Job {job_id} complete: {dest_path}")
                 

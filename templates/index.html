@@ -231,6 +231,19 @@
                     <div id="scan-results" class="results-list"></div>
                 </div>
 
+                <!-- 2D to 3D Conversion Card -->
+                <div class="card">
+                    <h2>✨ 2D to 3D Conversion</h2>
+                    <div class="upload-area" id="convert-drop-zone">
+                        <p>Click or Drag Image Here</p>
+                        <input type="file" id="convert-file-input" hidden accept="image/*">
+                    </div>
+                    <img id="convert-preview" class="preview-img">
+                    <button id="convert-btn" class="btn btn-primary" style="margin-top: 1rem; display: none;">Convert to
+                        3D</button>
+                    <div id="convert-results" class="results-list"></div>
+                </div>
+
                 <!-- Models Card -->
                 <div class="card">
                     <h2>📦 Model Library</h2>
@@ -297,7 +310,16 @@
 
         function logout() {
             localStorage.removeItem('token');
+            localStorage.removeItem('username');
             location.reload();
+        }
+
+        function checkAuth(res) {
+            if (res.status === 401 || res.status === 422) {
+                logout();
+                return false;
+            }
+            return true;
         }
 
         function showDashboard() {
@@ -345,6 +367,8 @@
                     body: formData
                 });
 
+                if (!checkAuth(res)) return;
+
                 const data = await res.json();
                 const resultsDiv = document.getElementById('scan-results');
                 resultsDiv.innerHTML = '';
@@ -365,12 +389,72 @@
             }
         });
 
+        // Conversion Logic
+        const convertDropZone = document.getElementById('convert-drop-zone');
+        const convertFileInput = document.getElementById('convert-file-input');
+
+        convertDropZone.addEventListener('click', () => convertFileInput.click());
+        convertFileInput.addEventListener('change', (e) => handleConvertFile(e.target.files[0]));
+
+        function handleConvertFile(file) {
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                document.getElementById('convert-preview').src = e.target.result;
+                document.getElementById('convert-preview').style.display = 'block';
+                document.getElementById('convert-btn').style.display = 'block';
+            };
+            reader.readAsDataURL(file);
+        }
+
+        document.getElementById('convert-btn').addEventListener('click', async () => {
+            const file = convertFileInput.files[0];
+            const formData = new FormData();
+            formData.append('file', file);
+
+            try {
+                const resultsDiv = document.getElementById('convert-results');
+                resultsDiv.innerHTML = '<p>Uploading and starting conversion...</p>';
+
+                const res = await fetch(API_URL + '/models/generate', {
+                    method: 'POST',
+                    headers: { 'Authorization': `Bearer ${token}` },
+                    body: formData
+                });
+
+                if (!checkAuth(res)) return;
+
+                const data = await res.json();
+
+                if (res.ok) {
+                    resultsDiv.innerHTML = `
+                        <div class="result-item" style="border-left-color: #2ecc71;">
+                            <strong>Success!</strong><br>
+                            ${data.message}<br>
+                            <small>Job ID: ${data.job_id}</small>
+                        </div>
+                    `;
+                    // Refresh models list after a delay to show the new model if it's fast, 
+                    // but usually it takes time.
+                    setTimeout(loadModels, 5000);
+                } else {
+                    resultsDiv.innerHTML = `<p style="color:red">Error: ${data.error || 'Conversion failed'}</p>`;
+                }
+            } catch (err) {
+                console.error(err);
+                document.getElementById('convert-results').innerHTML = '<p style="color:red">Network Error</p>';
+            }
+        });
+
         // Models Logic
         async function loadModels() {
             try {
-                const res = await fetch(API_URL + '/models', {
+                const res = await fetch(API_URL + '/models/', {
                     headers: { 'Authorization': `Bearer ${token}` }
                 });
+
+                if (!checkAuth(res)) return;
+
                 const models = await res.json();
 
                 const list = document.getElementById('models-list');

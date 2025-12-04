@@ -10,6 +10,7 @@ from flask import current_app
 scan_bp = Blueprint('scan', __name__, url_prefix='/api/scan')
 
 @scan_bp.route('', methods=['POST'])
+@jwt_required()
 def scan_image():
     """
     Upload an image -> Detect Planets -> Return Metadata

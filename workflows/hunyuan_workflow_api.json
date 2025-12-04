@@ -23,7 +23,7 @@
     "inputs": {
       "filename_prefix": "3D/Hy3D",
       "file_format": "glb",
-      "save_file": true,
+      "save_file": false,
       "trimesh": [
         "59",
         0

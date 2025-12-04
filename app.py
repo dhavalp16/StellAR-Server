@@ -30,66 +30,38 @@ CORS(app)
 
 # Configuration
 OUTPUT_DIR = "models"
-COMFYUI_OUTPUT_DIR = "C:/ComfyUI_windows_portable/ComfyUI/output/"
-OUTPUT_DIR = "models"
+GENERATED_DIR = "generated_models"
 COMFYUI_OUTPUT_DIR = "C:/ComfyUI_windows_portable/ComfyUI/output/"
 Path(OUTPUT_DIR).mkdir(exist_ok=True)
+Path(GENERATED_DIR).mkdir(exist_ok=True)
 
 # Database & Auth Config
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['JWT_SECRET_KEY'] = 'super-secret-key-change-this-in-prod'  # Change this!
+app.config['OUTPUT_DIR'] = OUTPUT_DIR
+app.config['GENERATED_DIR'] = GENERATED_DIR
+app.config['COMFYUI_OUTPUT_DIR'] = COMFYUI_OUTPUT_DIR
 
 # Initialize Extensions
 db.init_app(app)
 jwt = JWTManager(app)
 
-# Register Blueprints
-import os
-import time
-import glob
-from flask import Flask, request, jsonify, send_file, render_template
-from flask_cors import CORS
-import uuid
-from threading import Thread
-import logging
-import shutil
-import json
-import sys
-from pathlib import Path
-import torch
-import gc
-from flask_jwt_extended import JWTManager
-from modules.models import db, User, Model
-from modules.auth import auth_bp
+# JWT Error Handlers
+@jwt.invalid_token_loader
+def invalid_token_callback(error):
+    print(f"❌ INVALID TOKEN: {error}")
+    return jsonify({"msg": "Invalid token", "error": str(error)}), 422
 
-# Add current directory to path
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
-sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'modules'))
-sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'modules', 'identification'))
+@jwt.unauthorized_loader
+def missing_token_callback(error):
+    print(f"❌ MISSING TOKEN: {error}")
+    return jsonify({"msg": "Request does not contain an access token", "error": str(error)}), 401
 
-# Configure logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-logger = logging.getLogger(__name__)
-
-app = Flask(__name__)
-CORS(app)
-
-# Configuration
-OUTPUT_DIR = "models"
-COMFYUI_OUTPUT_DIR = "C:/ComfyUI_windows_portable/ComfyUI/output/"
-OUTPUT_DIR = "models"
-COMFYUI_OUTPUT_DIR = "C:/ComfyUI_windows_portable/ComfyUI/output/"
-Path(OUTPUT_DIR).mkdir(exist_ok=True)
-
-# Database & Auth Config
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['JWT_SECRET_KEY'] = 'super-secret-key-change-this-in-prod'  # Change this!
-
-# Initialize Extensions
-db.init_app(app)
-jwt = JWTManager(app)
+@jwt.expired_token_loader
+def expired_token_callback(jwt_header, jwt_payload):
+    print(f"❌ EXPIRED TOKEN: {jwt_payload}")
+    return jsonify({"msg": "Token has expired", "error": "token_expired"}), 401
 
 # Register Blueprints
 app.register_blueprint(auth_bp)
@@ -139,7 +111,8 @@ def initialize_modules():
         # Initialize model manager
         try:
             from modules.generation.model_manager import ModelManager
-            app.model_manager = ModelManager()
+            # Pass the configured GENERATED_DIR
+            app.model_manager = ModelManager(models_dir=app.config['GENERATED_DIR'])
         except Exception as e:
             print(f"⚠️ Model manager not available: {e}")
         
