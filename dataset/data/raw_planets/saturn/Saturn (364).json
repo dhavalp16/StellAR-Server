@@ -1,0 +1,39 @@
+{
+  "version": "3.3.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Saturn",
+      "score": null,
+      "points": [
+        [
+          157.0,
+          211.0
+        ],
+        [
+          482.0,
+          211.0
+        ],
+        [
+          482.0,
+          426.0
+        ],
+        [
+          157.0,
+          426.0
+        ]
+      ],
+      "group_id": null,
+      "description": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "Saturn (364).jpg",
+  "imageData": null,
+  "imageHeight": 640,
+  "imageWidth": 640
+}

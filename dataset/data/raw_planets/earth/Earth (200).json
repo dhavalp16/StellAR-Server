@@ -1,0 +1,68 @@
+{
+  "version": "3.3.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Earth",
+      "score": null,
+      "points": [
+        [
+          29.0,
+          28.0
+        ],
+        [
+          308.0,
+          28.0
+        ],
+        [
+          308.0,
+          582.0
+        ],
+        [
+          29.0,
+          582.0
+        ]
+      ],
+      "group_id": null,
+      "description": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Earth",
+      "score": null,
+      "points": [
+        [
+          350.0,
+          62.0
+        ],
+        [
+          627.0,
+          62.0
+        ],
+        [
+          627.0,
+          618.0
+        ],
+        [
+          350.0,
+          618.0
+        ]
+      ],
+      "group_id": null,
+      "description": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "Earth (200).jpg",
+  "imageData": null,
+  "imageHeight": 640,
+  "imageWidth": 640
+}

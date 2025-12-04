@@ -1,0 +1,40 @@
+{
+  "version": "3.3.1",
+  "flags": {},
+  "shapes": [
+    {
+      "kie_linking": [],
+      "label": "Venus",
+      "score": null,
+      "points": [
+        [
+          50.107526881720446,
+          64.62365591397852
+        ],
+        [
+          544.7311827956989,
+          64.62365591397852
+        ],
+        [
+          544.7311827956989,
+          551.1827956989247
+        ],
+        [
+          50.107526881720446,
+          551.1827956989247
+        ]
+      ],
+      "group_id": null,
+      "description": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    }
+  ],
+  "imagePath": "Venus (187).jpg",
+  "imageData": null,
+  "imageHeight": 640,
+  "imageWidth": 640,
+  "description": ""
+}

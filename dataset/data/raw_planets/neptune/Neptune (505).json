@@ -1,0 +1,40 @@
+{
+  "version": "3.3.1",
+  "flags": {},
+  "shapes": [
+    {
+      "kie_linking": [],
+      "label": "Neptune",
+      "score": null,
+      "points": [
+        [
+          11.397849462365627,
+          101.0
+        ],
+        [
+          639.0,
+          101.0
+        ],
+        [
+          639.0,
+          482.36559139784947
+        ],
+        [
+          11.397849462365627,
+          482.36559139784947
+        ]
+      ],
+      "group_id": null,
+      "description": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    }
+  ],
+  "imagePath": "Neptune (505).jpg",
+  "imageData": null,
+  "imageHeight": 640,
+  "imageWidth": 640,
+  "description": ""
+}

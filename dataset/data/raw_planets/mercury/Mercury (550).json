@@ -1,0 +1,39 @@
+{
+  "version": "3.3.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Mercury",
+      "score": null,
+      "points": [
+        [
+          0.0,
+          152.0
+        ],
+        [
+          626.0,
+          152.0
+        ],
+        [
+          626.0,
+          544.0
+        ],
+        [
+          0.0,
+          544.0
+        ]
+      ],
+      "group_id": null,
+      "description": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "Mercury (550).jpg",
+  "imageData": null,
+  "imageHeight": 640,
+  "imageWidth": 640
+}

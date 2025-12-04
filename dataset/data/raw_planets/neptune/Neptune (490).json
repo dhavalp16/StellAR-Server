@@ -1,0 +1,39 @@
+{
+  "version": "3.3.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Neptune",
+      "score": null,
+      "points": [
+        [
+          153.0,
+          24.0
+        ],
+        [
+          487.0,
+          24.0
+        ],
+        [
+          487.0,
+          620.0
+        ],
+        [
+          153.0,
+          620.0
+        ]
+      ],
+      "group_id": null,
+      "description": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "Neptune (490).jpg",
+  "imageData": null,
+  "imageHeight": 640,
+  "imageWidth": 640
+}

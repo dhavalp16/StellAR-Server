@@ -1,0 +1,40 @@
+{
+  "version": "3.3.1",
+  "flags": {},
+  "shapes": [
+    {
+      "kie_linking": [],
+      "label": "Jupiter",
+      "score": null,
+      "points": [
+        [
+          162.0,
+          39.0
+        ],
+        [
+          532.0,
+          39.0
+        ],
+        [
+          532.0,
+          637.0
+        ],
+        [
+          162.0,
+          637.0
+        ]
+      ],
+      "group_id": null,
+      "description": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    }
+  ],
+  "imagePath": "Jupiter (485).jpg",
+  "imageData": null,
+  "imageHeight": 640,
+  "imageWidth": 640,
+  "description": ""
+}

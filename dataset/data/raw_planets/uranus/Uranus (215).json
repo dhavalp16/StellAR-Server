@@ -1,0 +1,68 @@
+{
+  "version": "3.3.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Uranus",
+      "score": null,
+      "points": [
+        [
+          360.0,
+          127.0
+        ],
+        [
+          591.0,
+          127.0
+        ],
+        [
+          591.0,
+          539.0
+        ],
+        [
+          360.0,
+          539.0
+        ]
+      ],
+      "group_id": null,
+      "description": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Uranus",
+      "score": null,
+      "points": [
+        [
+          35.0,
+          120.0
+        ],
+        [
+          279.0,
+          120.0
+        ],
+        [
+          279.0,
+          554.0
+        ],
+        [
+          35.0,
+          554.0
+        ]
+      ],
+      "group_id": null,
+      "description": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "Uranus (215).jpg",
+  "imageData": null,
+  "imageHeight": 640,
+  "imageWidth": 640
+}

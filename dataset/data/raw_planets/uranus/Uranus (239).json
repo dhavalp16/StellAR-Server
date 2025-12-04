@@ -1,0 +1,39 @@
+{
+  "version": "3.3.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Uranus",
+      "score": null,
+      "points": [
+        [
+          116.0,
+          117.0
+        ],
+        [
+          518.0,
+          117.0
+        ],
+        [
+          518.0,
+          536.0
+        ],
+        [
+          116.0,
+          536.0
+        ]
+      ],
+      "group_id": null,
+      "description": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "Uranus (239).jpg",
+  "imageData": null,
+  "imageHeight": 640,
+  "imageWidth": 640
+}

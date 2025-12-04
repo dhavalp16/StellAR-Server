@@ -1,0 +1,39 @@
+{
+  "version": "3.3.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Jupiter",
+      "score": null,
+      "points": [
+        [
+          1.0,
+          150.0
+        ],
+        [
+          598.0,
+          150.0
+        ],
+        [
+          598.0,
+          515.0
+        ],
+        [
+          1.0,
+          515.0
+        ]
+      ],
+      "group_id": null,
+      "description": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "Jupiter (585).jpg",
+  "imageData": null,
+  "imageHeight": 640,
+  "imageWidth": 640
+}

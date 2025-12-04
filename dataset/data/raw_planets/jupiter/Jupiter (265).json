@@ -1,0 +1,69 @@
+{
+  "version": "3.3.1",
+  "flags": {},
+  "shapes": [
+    {
+      "kie_linking": [],
+      "label": "Jupiter",
+      "score": null,
+      "points": [
+        [
+          308.0,
+          21.0
+        ],
+        [
+          596.0,
+          21.0
+        ],
+        [
+          596.0,
+          591.0
+        ],
+        [
+          308.0,
+          591.0
+        ]
+      ],
+      "group_id": null,
+      "description": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "label": "Jupiter",
+      "score": null,
+      "points": [
+        [
+          3.0,
+          56.0
+        ],
+        [
+          280.0,
+          56.0
+        ],
+        [
+          280.0,
+          617.0
+        ],
+        [
+          3.0,
+          617.0
+        ]
+      ],
+      "group_id": null,
+      "description": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "Jupiter (265).jpg",
+  "imageData": null,
+  "imageHeight": 640,
+  "imageWidth": 640,
+  "description": ""
+}

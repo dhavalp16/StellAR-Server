@@ -1,0 +1,678 @@
+{
+  "version": "3.3.1",
+  "flags": {},
+  "shapes": [
+    {
+      "kie_linking": [],
+      "label": "Titan",
+      "score": null,
+      "points": [
+        [
+          1343.0,
+          890.0
+        ],
+        [
+          2332.0,
+          890.0
+        ],
+        [
+          2332.0,
+          1878.0
+        ],
+        [
+          1343.0,
+          1878.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Rhea",
+      "score": null,
+      "points": [
+        [
+          1014.0,
+          1261.0
+        ],
+        [
+          1252.0,
+          1261.0
+        ],
+        [
+          1252.0,
+          1520.0
+        ],
+        [
+          1014.0,
+          1520.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Dione",
+      "score": null,
+      "points": [
+        [
+          741.0,
+          1297.0
+        ],
+        [
+          914.0,
+          1297.0
+        ],
+        [
+          914.0,
+          1484.0
+        ],
+        [
+          741.0,
+          1484.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Tethys",
+      "score": null,
+      "points": [
+        [
+          468.0,
+          1304.0
+        ],
+        [
+          636.0,
+          1304.0
+        ],
+        [
+          636.0,
+          1477.0
+        ],
+        [
+          468.0,
+          1477.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Enceladus",
+      "score": null,
+      "points": [
+        [
+          302.0,
+          1348.0
+        ],
+        [
+          381.0,
+          1348.0
+        ],
+        [
+          381.0,
+          1430.0
+        ],
+        [
+          302.0,
+          1430.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Mimas",
+      "score": null,
+      "points": [
+        [
+          109.0,
+          1361.0
+        ],
+        [
+          171.0,
+          1361.0
+        ],
+        [
+          171.0,
+          1425.0
+        ],
+        [
+          109.0,
+          1425.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Miranda",
+      "score": null,
+      "points": [
+        [
+          132.0,
+          1916.0
+        ],
+        [
+          207.0,
+          1916.0
+        ],
+        [
+          207.0,
+          1995.0
+        ],
+        [
+          132.0,
+          1995.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Ariel",
+      "score": null,
+      "points": [
+        [
+          288.0,
+          1867.0
+        ],
+        [
+          447.0,
+          1867.0
+        ],
+        [
+          447.0,
+          2047.0
+        ],
+        [
+          288.0,
+          2047.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Umbriel",
+      "score": null,
+      "points": [
+        [
+          521.0,
+          1861.0
+        ],
+        [
+          690.0,
+          1861.0
+        ],
+        [
+          690.0,
+          2051.0
+        ],
+        [
+          521.0,
+          2051.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Titania",
+      "score": null,
+      "points": [
+        [
+          801.0,
+          1827.0
+        ],
+        [
+          1027.0,
+          1827.0
+        ],
+        [
+          1027.0,
+          2087.0
+        ],
+        [
+          801.0,
+          2087.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Oberon",
+      "score": null,
+      "points": [
+        [
+          1128.0,
+          1841.0
+        ],
+        [
+          1318.0,
+          1841.0
+        ],
+        [
+          1318.0,
+          2077.0
+        ],
+        [
+          1128.0,
+          2077.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Europa",
+      "score": null,
+      "points": [
+        [
+          1667.0,
+          227.0
+        ],
+        [
+          2146.0,
+          227.0
+        ],
+        [
+          2146.0,
+          742.0
+        ],
+        [
+          1667.0,
+          742.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Io",
+      "score": null,
+      "points": [
+        [
+          995.0,
+          179.11320754716982
+        ],
+        [
+          1538.0,
+          179.11320754716982
+        ],
+        [
+          1538.0,
+          784.1132075471698
+        ],
+        [
+          995.0,
+          784.1132075471698
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Moon",
+      "score": null,
+      "points": [
+        [
+          348.0,
+          589.0
+        ],
+        [
+          884.0,
+          589.0
+        ],
+        [
+          884.0,
+          1165.0
+        ],
+        [
+          348.0,
+          1165.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Ganymede",
+      "score": null,
+      "points": [
+        [
+          2248.0,
+          46.0
+        ],
+        [
+          3048.0,
+          46.0
+        ],
+        [
+          3048.0,
+          922.0
+        ],
+        [
+          2248.0,
+          922.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Callisto",
+      "score": null,
+      "points": [
+        [
+          3148.0,
+          84.0
+        ],
+        [
+          3922.0,
+          84.0
+        ],
+        [
+          3922.0,
+          881.0
+        ],
+        [
+          3148.0,
+          881.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Pluto",
+      "score": null,
+      "points": [
+        [
+          3004.0,
+          1137.0
+        ],
+        [
+          3391.0,
+          1137.0
+        ],
+        [
+          3391.0,
+          1523.0
+        ],
+        [
+          3004.0,
+          1523.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Charon",
+      "score": null,
+      "points": [
+        [
+          3474.0,
+          1260.0
+        ],
+        [
+          3665.0,
+          1260.0
+        ],
+        [
+          3665.0,
+          1457.0
+        ],
+        [
+          3474.0,
+          1457.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Lapetus",
+      "score": null,
+      "points": [
+        [
+          2440.0,
+          1265.0
+        ],
+        [
+          2669.0,
+          1265.0
+        ],
+        [
+          2669.0,
+          1516.0
+        ],
+        [
+          2440.0,
+          1516.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Triton",
+      "score": null,
+      "points": [
+        [
+          2598.0,
+          1686.0
+        ],
+        [
+          3008.0,
+          1686.0
+        ],
+        [
+          3008.0,
+          2133.0
+        ],
+        [
+          2598.0,
+          2133.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Proteus",
+      "score": null,
+      "points": [
+        [
+          3096.0,
+          1871.0
+        ],
+        [
+          3156.0,
+          1871.0
+        ],
+        [
+          3156.0,
+          1943.0
+        ],
+        [
+          3096.0,
+          1943.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Vesta",
+      "score": null,
+      "points": [
+        [
+          3451.0,
+          1717.0
+        ],
+        [
+          3526.0,
+          1717.0
+        ],
+        [
+          3526.0,
+          1813.0
+        ],
+        [
+          3451.0,
+          1813.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Ceres",
+      "score": null,
+      "points": [
+        [
+          3609.0,
+          1683.0
+        ],
+        [
+          3746.0,
+          1683.0
+        ],
+        [
+          3746.0,
+          1843.0
+        ],
+        [
+          3609.0,
+          1843.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    }
+  ],
+  "imagePath": "All (1).jpg",
+  "imageData": null,
+  "imageHeight": 2250,
+  "imageWidth": 4000,
+  "description": ""
+}

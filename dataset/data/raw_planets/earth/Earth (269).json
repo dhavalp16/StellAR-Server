@@ -1,0 +1,39 @@
+{
+  "version": "3.3.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Earth",
+      "score": null,
+      "points": [
+        [
+          56.0,
+          158.7956989247312
+        ],
+        [
+          489.35483870967744,
+          158.7956989247312
+        ],
+        [
+          489.35483870967744,
+          458.1720430107527
+        ],
+        [
+          56.0,
+          458.1720430107527
+        ]
+      ],
+      "group_id": null,
+      "description": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "Earth (269).jpg",
+  "imageData": null,
+  "imageHeight": 640,
+  "imageWidth": 640
+}

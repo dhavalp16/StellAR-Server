@@ -1,0 +1,242 @@
+{
+  "version": "3.3.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Mercury",
+      "score": null,
+      "points": [
+        [
+          7.0,
+          75.0
+        ],
+        [
+          150.0,
+          75.0
+        ],
+        [
+          150.0,
+          217.0
+        ],
+        [
+          7.0,
+          217.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Earth",
+      "score": null,
+      "points": [
+        [
+          8.0,
+          283.0
+        ],
+        [
+          149.0,
+          283.0
+        ],
+        [
+          149.0,
+          426.0
+        ],
+        [
+          8.0,
+          426.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Jupiter",
+      "score": null,
+      "points": [
+        [
+          16.0,
+          482.0
+        ],
+        [
+          165.0,
+          482.0
+        ],
+        [
+          165.0,
+          626.0
+        ],
+        [
+          16.0,
+          626.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Uranus",
+      "score": null,
+      "points": [
+        [
+          30.0,
+          661.0
+        ],
+        [
+          171.0,
+          661.0
+        ],
+        [
+          171.0,
+          800.0
+        ],
+        [
+          30.0,
+          800.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Neptune",
+      "score": null,
+      "points": [
+        [
+          565.0,
+          660.0
+        ],
+        [
+          704.0,
+          660.0
+        ],
+        [
+          704.0,
+          802.0
+        ],
+        [
+          565.0,
+          802.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Saturn",
+      "score": null,
+      "points": [
+        [
+          513.0,
+          491.0
+        ],
+        [
+          741.0,
+          491.0
+        ],
+        [
+          741.0,
+          618.0
+        ],
+        [
+          513.0,
+          618.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Mars",
+      "score": null,
+      "points": [
+        [
+          543.0,
+          283.0
+        ],
+        [
+          684.0,
+          283.0
+        ],
+        [
+          684.0,
+          427.0
+        ],
+        [
+          543.0,
+          427.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Venus",
+      "score": null,
+      "points": [
+        [
+          540.0,
+          74.0
+        ],
+        [
+          687.0,
+          74.0
+        ],
+        [
+          687.0,
+          218.0
+        ],
+        [
+          540.0,
+          218.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "All (9).jpg",
+  "imageData": null,
+  "imageHeight": 822,
+  "imageWidth": 1013
+}

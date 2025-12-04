@@ -1,0 +1,40 @@
+{
+  "version": "3.3.1",
+  "flags": {},
+  "shapes": [
+    {
+      "kie_linking": [],
+      "label": "Moon",
+      "score": null,
+      "points": [
+        [
+          50.0,
+          50.0
+        ],
+        [
+          184.0,
+          50.0
+        ],
+        [
+          184.0,
+          185.0
+        ],
+        [
+          50.0,
+          185.0
+        ]
+      ],
+      "group_id": null,
+      "description": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    }
+  ],
+  "imagePath": "Moon (449).jpg",
+  "imageData": null,
+  "imageHeight": 240,
+  "imageWidth": 240,
+  "description": ""
+}

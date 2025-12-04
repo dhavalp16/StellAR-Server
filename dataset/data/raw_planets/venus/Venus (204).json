@@ -1,0 +1,39 @@
+{
+  "version": "3.3.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Venus",
+      "score": null,
+      "points": [
+        [
+          87.0,
+          53.0
+        ],
+        [
+          577.0,
+          53.0
+        ],
+        [
+          577.0,
+          536.0
+        ],
+        [
+          87.0,
+          536.0
+        ]
+      ],
+      "group_id": null,
+      "description": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "Venus (204).jpg",
+  "imageData": null,
+  "imageHeight": 640,
+  "imageWidth": 640
+}

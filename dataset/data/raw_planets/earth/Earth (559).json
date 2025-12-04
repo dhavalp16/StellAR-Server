@@ -1,0 +1,39 @@
+{
+  "version": "3.3.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Earth",
+      "score": null,
+      "points": [
+        [
+          13.0,
+          84.0
+        ],
+        [
+          636.0,
+          84.0
+        ],
+        [
+          636.0,
+          469.0
+        ],
+        [
+          13.0,
+          469.0
+        ]
+      ],
+      "group_id": null,
+      "description": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "Earth (559).jpg",
+  "imageData": null,
+  "imageHeight": 640,
+  "imageWidth": 640
+}

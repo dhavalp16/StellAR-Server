@@ -1,0 +1,39 @@
+{
+  "version": "3.3.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Neptune",
+      "score": null,
+      "points": [
+        [
+          67.0,
+          79.0
+        ],
+        [
+          547.0,
+          79.0
+        ],
+        [
+          547.0,
+          557.0
+        ],
+        [
+          67.0,
+          557.0
+        ]
+      ],
+      "group_id": null,
+      "description": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "Neptune (274).jpg",
+  "imageData": null,
+  "imageHeight": 640,
+  "imageWidth": 640
+}

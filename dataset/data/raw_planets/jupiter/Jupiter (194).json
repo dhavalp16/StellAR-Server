@@ -1,0 +1,39 @@
+{
+  "version": "3.3.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Jupiter",
+      "score": null,
+      "points": [
+        [
+          82.0,
+          51.0
+        ],
+        [
+          364.0,
+          51.0
+        ],
+        [
+          364.0,
+          587.0
+        ],
+        [
+          82.0,
+          587.0
+        ]
+      ],
+      "group_id": null,
+      "description": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "Jupiter (194).jpg",
+  "imageData": null,
+  "imageHeight": 640,
+  "imageWidth": 640
+}

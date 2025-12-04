@@ -1,0 +1,242 @@
+{
+  "version": "3.3.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Earth",
+      "score": null,
+      "points": [
+        [
+          127.0,
+          861.0
+        ],
+        [
+          158.0,
+          861.0
+        ],
+        [
+          158.0,
+          891.0
+        ],
+        [
+          127.0,
+          891.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Neptune",
+      "score": null,
+      "points": [
+        [
+          232.0,
+          816.0
+        ],
+        [
+          350.0,
+          816.0
+        ],
+        [
+          350.0,
+          936.0
+        ],
+        [
+          232.0,
+          936.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Uranus",
+      "score": null,
+      "points": [
+        [
+          427.0,
+          812.0
+        ],
+        [
+          556.0,
+          812.0
+        ],
+        [
+          556.0,
+          939.0
+        ],
+        [
+          427.0,
+          939.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Saturn",
+      "score": null,
+      "points": [
+        [
+          629.0,
+          728.0
+        ],
+        [
+          931.0,
+          728.0
+        ],
+        [
+          931.0,
+          1025.0
+        ],
+        [
+          629.0,
+          1025.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Jupiter",
+      "score": null,
+      "points": [
+        [
+          1007.0,
+          690.0
+        ],
+        [
+          1377.0,
+          690.0
+        ],
+        [
+          1377.0,
+          1067.0
+        ],
+        [
+          1007.0,
+          1067.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Kepler-51d",
+      "score": null,
+      "points": [
+        [
+          1005.0,
+          178.0
+        ],
+        [
+          1364.0,
+          178.0
+        ],
+        [
+          1364.0,
+          543.0
+        ],
+        [
+          1005.0,
+          543.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Kepler-51c",
+      "score": null,
+      "points": [
+        [
+          533.0,
+          211.0
+        ],
+        [
+          862.0,
+          211.0
+        ],
+        [
+          862.0,
+          543.0
+        ],
+        [
+          533.0,
+          543.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Kepler-51b",
+      "score": null,
+      "points": [
+        [
+          130.0,
+          235.0
+        ],
+        [
+          395.0,
+          235.0
+        ],
+        [
+          395.0,
+          503.0
+        ],
+        [
+          130.0,
+          503.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "All (23).jpg",
+  "imageData": null,
+  "imageHeight": 1221,
+  "imageWidth": 1500
+}

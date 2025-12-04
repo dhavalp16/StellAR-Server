@@ -1,0 +1,126 @@
+{
+  "version": "3.3.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Mercury",
+      "score": null,
+      "points": [
+        [
+          39.0,
+          248.0
+        ],
+        [
+          201.0,
+          248.0
+        ],
+        [
+          201.0,
+          411.0
+        ],
+        [
+          39.0,
+          411.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Venus",
+      "score": null,
+      "points": [
+        [
+          260.0,
+          124.0
+        ],
+        [
+          670.0,
+          124.0
+        ],
+        [
+          670.0,
+          534.0
+        ],
+        [
+          260.0,
+          534.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Earth",
+      "score": null,
+      "points": [
+        [
+          734.0,
+          110.0
+        ],
+        [
+          1166.0,
+          110.0
+        ],
+        [
+          1166.0,
+          547.0
+        ],
+        [
+          734.0,
+          547.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Mars",
+      "score": null,
+      "points": [
+        [
+          1219.0,
+          214.0
+        ],
+        [
+          1452.0,
+          214.0
+        ],
+        [
+          1452.0,
+          445.0
+        ],
+        [
+          1219.0,
+          445.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "All (22).jpg",
+  "imageData": null,
+  "imageHeight": 648,
+  "imageWidth": 1500
+}

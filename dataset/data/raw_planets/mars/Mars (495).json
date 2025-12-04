@@ -1,0 +1,40 @@
+{
+  "version": "3.3.1",
+  "flags": {},
+  "shapes": [
+    {
+      "kie_linking": [],
+      "label": "Mars",
+      "score": null,
+      "points": [
+        [
+          130.46236559139777,
+          4.94623655913981
+        ],
+        [
+          527.5268817204301,
+          4.94623655913981
+        ],
+        [
+          527.5268817204301,
+          638.8494623655915
+        ],
+        [
+          130.46236559139777,
+          638.8494623655915
+        ]
+      ],
+      "group_id": null,
+      "description": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    }
+  ],
+  "imagePath": "Mars (495).jpg",
+  "imageData": null,
+  "imageHeight": 640,
+  "imageWidth": 640,
+  "description": ""
+}

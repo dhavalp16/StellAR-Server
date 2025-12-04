@@ -1,0 +1,184 @@
+{
+  "version": "3.3.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Earth",
+      "score": null,
+      "points": [
+        [
+          3602.0,
+          924.0
+        ],
+        [
+          3962.0,
+          924.0
+        ],
+        [
+          3962.0,
+          1291.0
+        ],
+        [
+          3602.0,
+          1291.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Kepler-186f",
+      "score": null,
+      "points": [
+        [
+          3127.0,
+          891.0
+        ],
+        [
+          3524.0,
+          891.0
+        ],
+        [
+          3524.0,
+          1287.0
+        ],
+        [
+          3127.0,
+          1287.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Kepler-62f",
+      "score": null,
+      "points": [
+        [
+          2534.0,
+          776.0
+        ],
+        [
+          3048.0,
+          776.0
+        ],
+        [
+          3048.0,
+          1289.0
+        ],
+        [
+          2534.0,
+          1289.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Kepler-452f",
+      "score": null,
+      "points": [
+        [
+          1864.0,
+          705.0
+        ],
+        [
+          2445.0,
+          705.0
+        ],
+        [
+          2445.0,
+          1288.0
+        ],
+        [
+          1864.0,
+          1288.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Kepler-69f",
+      "score": null,
+      "points": [
+        [
+          1137.0,
+          658.0
+        ],
+        [
+          1767.0,
+          658.0
+        ],
+        [
+          1767.0,
+          1290.0
+        ],
+        [
+          1137.0,
+          1290.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Kepler-22f",
+      "score": null,
+      "points": [
+        [
+          162.0,
+          401.0
+        ],
+        [
+          1058.0,
+          401.0
+        ],
+        [
+          1058.0,
+          1294.0
+        ],
+        [
+          162.0,
+          1294.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "All (14).jpg",
+  "imageData": null,
+  "imageHeight": 2304,
+  "imageWidth": 4096
+}

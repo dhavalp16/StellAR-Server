@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+app.db
+instance/
+
+# IDE
+.vscode/
+.idea/
+
+# Dataset & Large Files
+# Keep dataset if small enough, otherwise ignore
+# dataset/
+yolo_dataset/
+runs/
+test_debug/
+
+# Models
+# Ignore large models if >100MB
+# models/*.glb
+
+# System
+.DS_Store
+Thumbs.db
+
+# ComfyUI Output
+temp_*

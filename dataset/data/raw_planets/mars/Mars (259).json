@@ -1,0 +1,68 @@
+{
+  "version": "3.3.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Mars",
+      "score": null,
+      "points": [
+        [
+          264.0,
+          49.0
+        ],
+        [
+          638.0,
+          49.0
+        ],
+        [
+          638.0,
+          639.0
+        ],
+        [
+          264.0,
+          639.0
+        ]
+      ],
+      "group_id": null,
+      "description": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Earth",
+      "score": null,
+      "points": [
+        [
+          51.0,
+          61.0
+        ],
+        [
+          152.0,
+          61.0
+        ],
+        [
+          152.0,
+          220.0
+        ],
+        [
+          51.0,
+          220.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "Mars (259).jpg",
+  "imageData": null,
+  "imageHeight": 640,
+  "imageWidth": 640
+}

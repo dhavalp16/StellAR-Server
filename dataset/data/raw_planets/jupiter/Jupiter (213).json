@@ -1,0 +1,39 @@
+{
+  "version": "3.3.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Jupiter",
+      "score": null,
+      "points": [
+        [
+          260.0,
+          164.0
+        ],
+        [
+          581.0,
+          164.0
+        ],
+        [
+          581.0,
+          596.0
+        ],
+        [
+          260.0,
+          596.0
+        ]
+      ],
+      "group_id": null,
+      "description": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "Jupiter (213).jpg",
+  "imageData": null,
+  "imageHeight": 640,
+  "imageWidth": 640
+}

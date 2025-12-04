@@ -1,0 +1,271 @@
+{
+  "version": "3.3.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Mercury",
+      "score": null,
+      "points": [
+        [
+          1077.0,
+          241.0
+        ],
+        [
+          1227.0,
+          241.0
+        ],
+        [
+          1227.0,
+          435.0
+        ],
+        [
+          1077.0,
+          435.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Venus",
+      "score": null,
+      "points": [
+        [
+          1215.0,
+          268.0
+        ],
+        [
+          1505.0,
+          268.0
+        ],
+        [
+          1505.0,
+          563.0
+        ],
+        [
+          1215.0,
+          563.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Earth",
+      "score": null,
+      "points": [
+        [
+          1458.0,
+          364.0
+        ],
+        [
+          1764.0,
+          364.0
+        ],
+        [
+          1764.0,
+          696.0
+        ],
+        [
+          1458.0,
+          696.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Mars",
+      "score": null,
+      "points": [
+        [
+          1666.0,
+          585.0
+        ],
+        [
+          1949.0,
+          585.0
+        ],
+        [
+          1949.0,
+          868.0
+        ],
+        [
+          1666.0,
+          868.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Jupiter",
+      "score": null,
+      "points": [
+        [
+          1701.0,
+          829.0
+        ],
+        [
+          2188.0,
+          829.0
+        ],
+        [
+          2188.0,
+          1306.0
+        ],
+        [
+          1701.0,
+          1306.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Saturn",
+      "score": null,
+      "points": [
+        [
+          1411.0,
+          1145.0
+        ],
+        [
+          2147.0,
+          1145.0
+        ],
+        [
+          2147.0,
+          1668.0
+        ],
+        [
+          1411.0,
+          1668.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Uranus",
+      "score": null,
+      "points": [
+        [
+          1412.0,
+          1422.0
+        ],
+        [
+          1705.0,
+          1422.0
+        ],
+        [
+          1705.0,
+          1745.0
+        ],
+        [
+          1412.0,
+          1745.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Neptune",
+      "score": null,
+      "points": [
+        [
+          1054.0,
+          1437.0
+        ],
+        [
+          1457.0,
+          1437.0
+        ],
+        [
+          1457.0,
+          1842.0
+        ],
+        [
+          1054.0,
+          1842.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Moon",
+      "score": null,
+      "points": [
+        [
+          1772.0,
+          268.0
+        ],
+        [
+          1946.0,
+          268.0
+        ],
+        [
+          1946.0,
+          440.0
+        ],
+        [
+          1772.0,
+          440.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "All (12).jpg",
+  "imageData": null,
+  "imageHeight": 2048,
+  "imageWidth": 3072
+}

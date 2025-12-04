@@ -1,0 +1,39 @@
+{
+  "version": "3.3.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Mars",
+      "score": null,
+      "points": [
+        [
+          153.0,
+          25.0
+        ],
+        [
+          486.0,
+          25.0
+        ],
+        [
+          486.0,
+          617.0
+        ],
+        [
+          153.0,
+          617.0
+        ]
+      ],
+      "group_id": null,
+      "description": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "Mars (491).jpg",
+  "imageData": null,
+  "imageHeight": 640,
+  "imageWidth": 640
+}

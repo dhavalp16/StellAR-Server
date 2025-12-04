@@ -1,0 +1,40 @@
+{
+  "version": "3.3.1",
+  "flags": {},
+  "shapes": [
+    {
+      "kie_linking": [],
+      "label": "Saturn",
+      "score": null,
+      "points": [
+        [
+          64.0,
+          45.0
+        ],
+        [
+          192.53558504221954,
+          45.0
+        ],
+        [
+          192.53558504221954,
+          121.81905910735826
+        ],
+        [
+          64.0,
+          121.81905910735826
+        ]
+      ],
+      "group_id": null,
+      "description": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    }
+  ],
+  "imagePath": "Saturn (70).jpg",
+  "imageData": null,
+  "imageHeight": 144,
+  "imageWidth": 256,
+  "description": ""
+}

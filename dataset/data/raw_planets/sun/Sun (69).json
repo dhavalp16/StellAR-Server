@@ -1,0 +1,39 @@
+{
+  "version": "3.3.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Sun",
+      "score": null,
+      "points": [
+        [
+          17.0,
+          7.0
+        ],
+        [
+          220.0,
+          7.0
+        ],
+        [
+          220.0,
+          211.0
+        ],
+        [
+          17.0,
+          211.0
+        ]
+      ],
+      "group_id": null,
+      "description": null,
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "Sun (69).jpg",
+  "imageData": null,
+  "imageHeight": 226,
+  "imageWidth": 240
+}
