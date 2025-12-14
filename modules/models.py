@@ -35,6 +35,8 @@ class Model(db.Model):
     source = db.Column(db.String(50), default='generated')  # generated, upload, sketchfab
     is_public = db.Column(db.Boolean, default=False)
     uploader_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=True)
+    rarity = db.Column(db.String(20), default='Common') # Common, Rare, Epic, Legendary
+    xp_reward = db.Column(db.Integer, default=10)
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
 
     def __repr__(self):

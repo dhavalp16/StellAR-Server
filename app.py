@@ -42,6 +42,9 @@ app.config['JWT_SECRET_KEY'] = 'super-secret-key-change-this-in-prod'  # Change 
 app.config['OUTPUT_DIR'] = OUTPUT_DIR
 app.config['GENERATED_DIR'] = GENERATED_DIR
 app.config['COMFYUI_OUTPUT_DIR'] = COMFYUI_OUTPUT_DIR
+app.config['SUPABASE_URL'] = os.environ.get('SUPABASE_URL')
+app.config['SUPABASE_KEY'] = os.environ.get('SUPABASE_KEY')
+
 
 # Initialize Extensions
 db.init_app(app)
@@ -117,6 +120,14 @@ def initialize_modules():
             print(f"⚠️ Model manager not available: {e}")
         
         print("✅ All available modules loaded!")
+        
+        # Initialize Supabase
+        try:
+            from modules.supabase_service import supabase_service
+            supabase_service.initialize()
+        except Exception as e:
+            logger.warning(f"Supabase init failed: {e}")
+
             
     except Exception as e:
         logger.warning(f"Error loading modules: {e}")
