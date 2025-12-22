@@ -1,7 +1,7 @@
 # PyTorch with CUDA 12.1 support - compatible versions
 torch>=2.0.0
 torchvision>=0.15.0
---extra-index-url https://download.pytorch.org/whl/cu121
+--extra-index-url https://download.pytorch.org/whl/cu126
 
 # Core computer vision
 Pillow>=10.0.0

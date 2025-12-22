@@ -10,7 +10,7 @@ from flask import current_app
 scan_bp = Blueprint('scan', __name__, url_prefix='/api/scan')
 
 @scan_bp.route('', methods=['POST'])
-@jwt_required()
+# @jwt_required()
 def scan_image():
     """
     Upload an image -> Detect Planets -> Return Metadata
@@ -52,18 +52,24 @@ def scan_image():
         # Let's assume pixel coords for now, Unity can handle mapping if we send image size.
         
         detections = []
+        detections_name = []
         for d in result.get('detections', []):
-            detections.append({
-                'name': d['class_name'],
-                'confidence': d['confidence'],
-                'bbox': d['bbox']
-            })
-            
-        return jsonify({
+            if(d['confidence'] > 0.9):
+                detections.append({
+                    'name': d['class_name'],
+                    'confidence': d['confidence'],
+                    'bbox': d['bbox']
+                })
+                detections_name.append(d['class_name'])
+        
+        res = jsonify({
             'success': True,
-            'detections': detections,
+            'detections': detections_name,
             'count': len(detections)
-        })
+        })    
+        print(res)
+        print("detection",detections)
+        return res    
         
     except Exception as e:
         if os.path.exists(temp_path):

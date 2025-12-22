@@ -31,3 +31,4 @@ Thumbs.db
 
 # ComfyUI Output
 temp_*
+server_env/
