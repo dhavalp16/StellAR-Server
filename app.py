@@ -74,6 +74,7 @@ from modules.api.models import models_bp
 from modules.api.users import users_bp
 from modules.api.classroom import classroom_api
 from modules.api.llm_response import llm_api
+from modules.api.ocr import ocr_bp
 
 
 app.register_blueprint(scan_bp)
@@ -81,6 +82,7 @@ app.register_blueprint(models_bp)
 app.register_blueprint(users_bp)
 app.register_blueprint(classroom_api)
 app.register_blueprint(llm_api)
+app.register_blueprint(ocr_bp)
 
 # Create Tables
 with app.app_context():
