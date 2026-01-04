@@ -60,7 +60,7 @@ def scan_image():
 
         for d in result.get('detections', []):
             conf = d.get('confidence', 0)
-            if conf > 0.9:  # Confidence threshold
+            if conf > 0.5:  # Confidence threshold
                 class_name = d['class_name']
                 detections.append({
                     'name': class_name,
@@ -86,6 +86,7 @@ def scan_image():
                 llm_info = [{
                     "title": name,
                     "summary": "Could not generate information at this time.",
+                    "badge": "No Badge",
                     "facts": ["Data unavailable", "Data unavailable", "Data unavailable"],
                     "error": str(e)
                 } for name in detected_names]

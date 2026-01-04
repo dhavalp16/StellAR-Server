@@ -37,6 +37,7 @@ def generate_info_batch(keywords: Union[str, List[str]]) -> List[Dict]:
             {{
                 "title": "Name of the topic",
                 "summary": "A 2-sentence summary suitable for a high school student.",
+                "badge": "A nickname for the topic.",
                 "facts": [
                     "Interesting One Word fact 1",
                     "Interesting One Word fact 2",
@@ -90,6 +91,7 @@ def generate_info_batch(keywords: Union[str, List[str]]) -> List[Dict]:
             results.append({
                 "title": keyword,
                 "summary": "Failed to parse response.",
+                "badge": "Failed to parse response.",
                 "facts": ["Data unavailable", "Data unavailable", "Data unavailable"],
                 "error": "JSON decode error"
             })
@@ -98,6 +100,7 @@ def generate_info_batch(keywords: Union[str, List[str]]) -> List[Dict]:
             results.append({
                 "title": keyword,
                 "summary": "Failed to generate information.",
+                "badge": "Failed to generate information.",
                 "facts": ["Data unavailable", "Data unavailable", "Data unavailable"],
                 "error": str(e)
             })

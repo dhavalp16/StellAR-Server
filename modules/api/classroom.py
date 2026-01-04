@@ -47,14 +47,15 @@ def create_classroom():
 def join_classroom():
     try:
         payload = request.get_json()
-        print(payload)
+        print("payload", payload)
         if not payload:
             return jsonify({"error": "Missing JSON body"}), 400
         
         classroom_id = supabase_service.query_records("classroom", select="id", filters={"join_code": payload['join_code']})
         if not classroom_id:
-            return jsonify({"error": "Classroom not found"}), 404
-
+            return jsonify({"error": "No Classroom Found"}), 404
+        print(classroom_id)
+        
         insert_record = {
             "classroom_id": classroom_id[0]['id'],
             "user_id": payload['user_id']
