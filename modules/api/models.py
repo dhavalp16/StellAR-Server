@@ -128,7 +128,7 @@ def calculate_rarity():
     elif roll < 0.50: return "Rare", 50
     else: return "Common", 10
 
-def run_generation_task(app, job_id, image_path, user_id, user_provided_name=None, subject='Astronomy'):
+def run_generation_task(app, job_id, image_path, user_id, user_provided_name=None, subject='Astronomy', metadata_override=None, uploader_id_override=None):
     """Background task for ComfyUI generation"""
     with app.app_context():
         try:
@@ -195,22 +195,31 @@ def run_generation_task(app, job_id, image_path, user_id, user_provided_name=Non
                         # Calculate Rarity
                         rarity_name, xp_val = calculate_rarity()
                         
+                        # Prepare Metadata
+                        final_metadata = {
+                            "job_id": job_id,
+                            "prompt": "Generated"
+                        }
+                        # Merge overrides
+                        if metadata_override:
+                            final_metadata.update(metadata_override)
+
+                        # Determine uploader
+                        final_uploader = str(uploader_id_override) if uploader_id_override else str(user_id) 
+
                         # Insert Record
                         # Schema: model_name, description, model_url, rarity, xp_reward, metadata, model_subject, model_thumbnail, min_level
                         record = {
                             "model_name": final_name,
-                            "description": "Generated via ComfyUI",
+                            "description": final_metadata.get('quiz_context', "Generated via ComfyUI"), # Use quiz text snippet if avail
                             "model_url": model_url,
                             "rarity": rarity_name,
                             "xp_reward": xp_val,
                             "model_subject": subject,
                             "model_thumbnail": thumbnail_url,
                             "min_level": 1, 
-                            "uploader_id": str(uuid.uuid4()), # Placeholder UUID or real user UUID if linked
-                            "metadata": {
-                                "job_id": job_id,
-                                "prompt": "Generated"
-                            }
+                            "uploader_id": final_uploader,
+                            "metadata": final_metadata
                         }
                         
                         # Note: uploader_id in new schema is UUID. 'user_id' from JWT was int (from SQLite).

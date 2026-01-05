@@ -7,6 +7,8 @@ from werkzeug.utils import secure_filename
 from modules.api.ocr import extract_text_from_file
 from modules.quiz_generator import generate_quiz_from_text, generate_summary_from_text
 from modules.supabase_service import supabase_service
+from modules.api.models import run_generation_task
+import threading
 
 learning_modules_bp = Blueprint('learning_modules_bp', __name__)
 
@@ -145,3 +147,51 @@ def create_module():
 
     except Exception as e:
         return jsonify({'error': f"Server error: {str(e)}"}), 500
+
+def trigger_learning_model_generation(image_file, module_name="Generated Learning Asset"):
+    """
+    Helper function to trigger 3D model generation from an image for a learning module.
+    Returns a dict with success status and job_id.
+    """
+    try:
+        # 1. Save Temp Image
+        job_id = str(uuid.uuid4())
+        output_dir = current_app.config.get('OUTPUT_DIR', 'models')
+        if not os.path.exists(output_dir):
+            os.makedirs(output_dir)
+            
+        input_path = os.path.join(output_dir, f"temp_learn_gen_{job_id}.png")
+        image_file.save(input_path)
+        
+        # 2. Trigger Hunyuan Workflow
+        metadata = {
+            "source": "learning_module",
+            "type": "generated_asset"
+        }
+        
+        thread = threading.Thread(
+            target=run_generation_task, 
+            args=(
+                current_app._get_current_object(), 
+                job_id, 
+                input_path, 
+                0, # user_id 
+                module_name, 
+                "Learning Asset", # subject
+                metadata,
+                None # uploader_id_override
+            )
+        )
+        thread.daemon = True
+        thread.start()
+        
+        return {
+            'success': True,
+            'message': 'Generation started',
+            'job_id': job_id
+        }
+
+    except Exception as e:
+        print(f"Error in trigger_learning_model_generation: {e}")
+        return {'success': False, 'error': str(e)}
+
