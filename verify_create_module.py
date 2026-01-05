@@ -19,10 +19,12 @@ sys.modules['modules.api.ocr'].extract_text_from_file.return_value = "Mock PDF t
 
 sys.modules['modules.quiz_generator'] = MagicMock()
 sys.modules['modules.quiz_generator'].generate_quiz_from_text.return_value = [{"question": "Q1?", "options": ["A"], "correct_answer": "A"}]
+sys.modules['modules.quiz_generator'].generate_summary_from_text.return_value = "Mock summary"
 
 # Mock upload_file to return dummy URLs
 mock_service.upload_file.side_effect = lambda bucket, source, dest: f"https://mock.supabase.co/{bucket}/{dest}"
-mock_service.insert_record.return_value = {"id": 1}
+mock_service.insert_record.return_value = [{"id": 1}]
+mock_service.update_record.return_value = [{"id": 1, "model_url": "https://mock.supabase.co/models/gen_123.glb"}]
 
 try:
     from modules.api.learning_modules import learning_modules_bp

@@ -67,9 +67,24 @@ class SupabaseService:
         
         try:
             data = self.client.table(table).insert(data).execute()
-            return data
+            return data.data
         except Exception as e:
             logger.error(f"Failed to insert record into {table}: {e}")
+            raise e
+
+    def update_record(self, table: str, match: dict, update: dict):
+        if not self.initialized:
+            raise Exception("Supabase not initialized")
+        
+        try:
+            query = self.client.table(table).update(update)
+            for key, value in match.items():
+                query = query.eq(key, value)
+            
+            data = query.execute()
+            return data.data
+        except Exception as e:
+            logger.error(f"Failed to update record in {table}: {e}")
             raise e
 
     def query_records(self, table: str, select: str = "*", filters: dict = None):

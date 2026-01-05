@@ -36,7 +36,7 @@ def create_classroom():
             payload
         )
 
-        return jsonify(response.data), 201
+        return jsonify(response), 201
 
     except Exception as e:
         print(e)
@@ -65,7 +65,7 @@ def join_classroom():
             insert_record
         )
 
-        return jsonify(response.data), 200
+        return jsonify(response), 200
 
     except Exception as e:
         print(e)
